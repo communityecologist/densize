@@ -7,3 +7,31 @@ The R package `densize` (DENSIty and SIZE) partitions the net, complementarity, 
 remotes::install_github("communityecologist/densize")
 library(densize)
 ```
+
+## Usage
+```{r}
+densize(init.dens, final.dens, final.yield, germ.dens)
+```
+- `init.dens` : A matrix or data frame consisting of initial plant density (the number of plants or seeds sown per area).
+- `final.dens` : A matrix or data frame consisting of final plant density (the number of plants survived).
+- `final.yield` : A matrix or data frame consisting of final yield (yield per area).
+- `germ.dens` : Optional. A matrix or data frame consisting of germination density (e.g., number of seedlings emerged per area).
+
+Run `?densize` for detail.
+
+## Dataset
+```{r}
+BioDivExpt.1
+BioDivExpt.2
+```
+- `BioDivExpt.1` : A dataset of a diversity experiment using annual plants. Five species were sown solely or in mixtures of two, three, or four species in planting pots at a total of 24 seeds.
+- `BioDivExpt.2` : A dataset of a diversity experiment using annual plants. Five species were sown solely or in mixtures of two, three, or four species in planting pots at a total of 72 seeds.
+
+Run `?BioDivExpt.1` and `?BioDivExpt.2` for detail.
+
+## Example
+```{r}
+dat  <- BioDivExpt.1
+res1 <- densize(dat$InitDens, dat$FinalDens, dat$FinalYield)
+res2 <- densize(dat$InitDens, dat$FinalDens, dat$FinalYield, dat$GermDens)
+```
