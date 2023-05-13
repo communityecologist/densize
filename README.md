@@ -19,7 +19,7 @@ densize(init.dens, final.dens, final.yield, germ.dens)
 
 Run `?densize` for detail.
 
-## Dataset
+## Datasets
 ```{r}
 BioDivExpt.1
 BioDivExpt.2
@@ -29,7 +29,7 @@ BioDivExpt.2
 
 Run `?BioDivExpt.1` and `?BioDivExpt.2` for detail.
 
-## Example
+## Examples
 ```{r}
 dat  <- BioDivExpt.1
 res1 <- densize(dat$InitDens, dat$FinalDens, dat$FinalYield)
