@@ -13,7 +13,7 @@ library(densize)
 densize(init.dens, final.dens, final.yield, germ.dens)
 ```
 - `init.dens` : A matrix or data frame consisting of initial plant density (the number of plants or seeds sown per area).
-- `final.dens` : A matrix or data frame consisting of final plant density (the number of plants survived).
+- `final.dens` : A matrix or data frame consisting of final plant density (the number of plants survived per area).
 - `final.yield` : A matrix or data frame consisting of final yield (yield per area).
 - `germ.dens` : Optional. A matrix or data frame consisting of germination density (the number of seedlings emerged per area).
 
