@@ -36,5 +36,5 @@ res1 <- densize(dat$InitDens, dat$FinalDens, dat$FinalYield)
 res2 <- densize(dat$InitDens, dat$FinalDens, dat$FinalYield, dat$GermDens)
 ```
 
-## Citations
-* [Tatsumi S & Loreau M (in press) Partitioning the biodiversity effects on productivity into density and size components. *Ecology Letters* doi:10.1111/ele.14300.](https://onlinelibrary.wiley.com/doi/full/10.1111/ele.14300)
+## Citation
+[Tatsumi S & Loreau M (in press) Partitioning the biodiversity effects on productivity into density and size components. *Ecology Letters* doi:10.1111/ele.14300.](https://onlinelibrary.wiley.com/doi/full/10.1111/ele.14300)
